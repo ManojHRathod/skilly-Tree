@@ -2,8 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins";
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -13,4 +14,25 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.inputField {
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #505050;
+}
+.inputField::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #cbcbcb;
+  letter-spacing: 0.07em;
+  text-transform: capitalize;
+}
+.inputField:focus {
+  outline: none !important;
 }

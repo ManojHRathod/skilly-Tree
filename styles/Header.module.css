@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  padding: 19px 71px;
+  background: #ffffff;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.14);
+  align-items: center;
+}
+.searchBox {
+  margin: 3px 0px;
+  display: flex;
+  align-items: center;
+  width: 325px;
+  height: 55px;
+  border: 2px solid rgba(167, 167, 167, 0.56);
+  box-sizing: border-box;
+  border-radius: 54px;
+  margin-left: 314px;
+  padding: 0px 26px;
+}
+.inputField {
+  width: 100%;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #505050;
+  padding-right: 26px;
+}
+.inputField::placeholder {
+  color: #b4b4b4;
+  letter-spacing: 0.16em !important;
+}
+.inputField:focus {
+  outline: none !important;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: 62px;
+  margin-right: 60px;
+}
+.signInButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 148px;
+  height: 56px;
+  background: linear-gradient(112.33deg, #fc4d6d 23.89%, #fda02f 94.22%);
+  border-radius: 61px;
+  margin-left: auto;
+}
