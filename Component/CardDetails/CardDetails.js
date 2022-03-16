@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field } from "formik";
 import Image from "next/image";
 
@@ -6,6 +6,7 @@ import { Box, Flex, Text, Grid } from "atoms";
 import InputLabel from "CommonComponents/InputLabel/InputLabel";
 
 const CardDetails = () => {
+  const [selected, setSelected] = useState(0);
   return (
     <>
       <Formik
@@ -26,6 +27,7 @@ const CardDetails = () => {
                         placeholder="xxxx xxxx xxxx xxxx"
                         maxlength="16"
                         className="inputField"
+                        onClick={() => setSelected(true)}
                       />
                       <Box ml="auto">
                         <Image
@@ -38,7 +40,11 @@ const CardDetails = () => {
                     </Flex>
                     <Box
                       borderBottom="2px solid"
-                      borderColor="#6A6A6A"
+                      borderColor={
+                        selected === !false
+                          ? "rgba(83, 109, 238, 1)"
+                          : "#6A6A6A"
+                      }
                       width="100%"
                       mt="6px"
                     />
@@ -52,17 +58,22 @@ const CardDetails = () => {
                       name="cardName"
                       placeholder="ENTER YOUR NAME"
                       className="inputField"
+                      onClick={() => setSelected(true)}
                     />
                     <Box
                       borderBottom="2px solid"
-                      borderColor="#6A6A6A"
+                      borderColor={
+                        selected === !false
+                          ? "rgba(83, 109, 238, 1)"
+                          : "#6A6A6A"
+                      }
                       width="100%"
                       mt="6px"
                     />
                   </Box>
 
                   <Box>
-                    <Grid gridTemplateColumns="1fr 1fr" gridGap="23px">
+                    <Grid gridTemplateColumns="144px 144px" gridGap="23px">
                       <Box>
                         <InputLabel text="Expiry Date" />
                         <Field
@@ -71,10 +82,15 @@ const CardDetails = () => {
                           name="date"
                           placeholder="MM/YY"
                           className="inputField"
+                          onClick={() => setSelected(true)}
                         />
                         <Box
                           borderBottom="2px solid"
-                          borderColor="#6A6A6A"
+                          borderColor={
+                            selected === !false
+                              ? "rgba(83, 109, 238, 1)"
+                              : "#6A6A6A"
+                          }
                           width="100%"
                           mt="6px"
                         />
@@ -87,10 +103,15 @@ const CardDetails = () => {
                           name="cvv"
                           placeholder="---"
                           className="inputField"
+                          onClick={() => setSelected(true)}
                         />
                         <Box
                           borderBottom="2px solid"
-                          borderColor="#6A6A6A"
+                          borderColor={
+                            selected === !false
+                              ? "rgba(83, 109, 238, 1)"
+                              : "#6A6A6A"
+                          }
                           width="100%"
                           mt="6px"
                         />

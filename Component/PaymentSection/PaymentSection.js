@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Formik, Form, Field } from "formik";
 
@@ -14,12 +14,15 @@ const data = [
 ];
 
 const PaymentSection = () => {
+  const [selected, setSelected] = useState(false);
   return (
     <>
       <Grid gridTemplateColumns="2.3fr 1fr">
         <Box pl="111px" pr="204px" pt="46px" pb="62px">
           <Flex flex flexDirection="row" mb="10px">
-            <PaymentTitle text="Personal Details" color="#848484" />
+            <Box onClick={() => setSelected(true)}>
+              <PaymentTitle text="Personal Details" color="#848484" />
+            </Box>
             <Flex alignItems="center" ml="178px" mr="17px">
               <Flex
                 width="6px"
@@ -28,7 +31,9 @@ const PaymentSection = () => {
                 background="#FC4D6D"
               />
             </Flex>
-            <PaymentTitle text="Personal Details" color="#848484" />
+            <Box onClick={() => setSelected(true)}>
+              <PaymentTitle text="Payment Section" color="#848484" />
+            </Box>
           </Flex>
           <Box
             borderBottom="2px solid"
@@ -91,14 +96,50 @@ const PaymentSection = () => {
                   left={0}
                   bottom={0}
                 />
-                <Box
+                <Flex
                   backgroundImage="url(/images/card-one.svg)"
                   backgroundSize="cover"
+                  width="100%"
                   height="108px"
                   zIndex={2}
                   filter="blue(24)"
-                  // style={{ filter: "blur(24px)" }}
-                ></Box>
+                  background="linear-gradient(147.46deg, rgba(255, 255, 255, 0.4) 30.82%, rgba(255, 255, 255, 0.1) 77.94%)"
+                  boxShadow="-4px -4px 11px rgba(95, 95, 95, 0.06), 4px 4px 7px rgba(62, 62, 62, 0.08)"
+                  alignItems="center"
+                >
+                  {/* <Grid
+                    gridTemplateColumns="repeat(3, auto)"
+                    justifyContent="space-between"
+                    px="14px"
+                  >
+                    <Box>
+                      <Image
+                        src="/images/empty-circle.svg"
+                        alt="empty-circle"
+                        width={18}
+                        height={18}
+                      />
+                    </Box>
+                    <Box>
+                      <Text
+                        fontFamily="Poppins"
+                        fontWeight="600"
+                        fontSize="14px"
+                        color="#5F5F5F"
+                      >
+                        xXXX 4023
+                      </Text>
+                    </Box>
+                    <Box>
+                      <Image
+                        src="/images/card-logo.svg"
+                        alt="empty-circle"
+                        width={18}
+                        height={18}
+                      />
+                    </Box>
+                  </Grid> */}
+                </Flex>
               </Box>
             </Box>
             <Box>
@@ -118,14 +159,49 @@ const PaymentSection = () => {
                   left={0}
                   bottom={0}
                 />
-                <Box
+                <Flex
                   backgroundImage="url(/images/card-one.svg)"
                   backgroundSize="cover"
                   height="108px"
                   zIndex={2}
                   filter="blue(24)"
-                  // style={{ filter: "blur(24px)" }}
-                ></Box>
+                  background="linear-gradient(147.46deg, rgba(255, 255, 255, 0.4) 30.82%, rgba(255, 255, 255, 0.1) 77.94%)"
+                  boxShadow="-4px -4px 11px rgba(95, 95, 95, 0.06), 4px 4px 7px rgba(62, 62, 62, 0.08)"
+                  alignItems="center"
+                >
+                  {/* <Grid
+                    gridTemplateColumns="repeat(3, auto)"
+                    justifyContent="space-between"
+                    px="14px"
+                  >
+                    <Box>
+                      <Image
+                        src="/images/empty-circle.svg"
+                        alt="empty-circle"
+                        width={18}
+                        height={18}
+                      />
+                    </Box>
+                    <Box>
+                      <Text
+                        fontFamily="Poppins"
+                        fontWeight="600"
+                        fontSize="14px"
+                        color="#5F5F5F"
+                      >
+                        xXXX 4023
+                      </Text>
+                    </Box>
+                    <Box>
+                      <Image
+                        src="/images/card-logo.svg"
+                        alt="empty-circle"
+                        width={18}
+                        height={18}
+                      />
+                    </Box>
+                  </Grid> */}
+                </Flex>
               </Box>
             </Box>
             <Grid></Grid>
