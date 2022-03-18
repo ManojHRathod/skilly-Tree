@@ -73,7 +73,7 @@ const CardDetails = () => {
                   </Box>
 
                   <Box>
-                    <Grid gridTemplateColumns="144px 144px" gridGap="23px">
+                    <Grid gridTemplateColumns="1fr 1fr" gridGap="23px">
                       <Box>
                         <InputLabel text="Expiry Date" />
                         <Field
@@ -81,7 +81,7 @@ const CardDetails = () => {
                           id="date"
                           name="date"
                           placeholder="MM/YY"
-                          className="inputField"
+                          className="date-field"
                           onClick={() => setSelected(true)}
                         />
                         <Box
@@ -97,14 +97,24 @@ const CardDetails = () => {
                       </Box>
                       <Box>
                         <InputLabel text="CVV" />
-                        <Field
-                          type="text"
-                          id="cvv"
-                          name="cvv"
-                          placeholder="---"
-                          className="inputField"
-                          onClick={() => setSelected(true)}
-                        />
+                        <Flex>
+                          <Field
+                            type="text"
+                            id="cvv"
+                            name="cvv"
+                            placeholder="---"
+                            className="cvv-field"
+                            onClick={() => setSelected(true)}
+                          />
+                          <Box ml="auto">
+                            <Image
+                              src="/images/alert-circle.svg"
+                              alt="alert-circle"
+                              width={16}
+                              height={16}
+                            />
+                          </Box>
+                        </Flex>
                         <Box
                           borderBottom="2px solid"
                           borderColor={

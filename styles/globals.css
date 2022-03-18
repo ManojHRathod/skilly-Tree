@@ -36,3 +36,67 @@ a {
 .inputField:focus {
   outline: none !important;
 }
+
+.search-input {
+  width: 100%;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #505050;
+  padding-right: 26px;
+}
+.search-input::placeholder {
+  color: #b4b4b4;
+  letter-spacing: 0.16em !important;
+}
+.search-input:focus {
+  outline: none !important;
+}
+.coupon-input {
+  background: #ffffff;
+  border-radius: 6px;
+  border: none;
+  width: 178px;
+  height: 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+  padding: 0px 20px;
+}
+.coupon-input:focus {
+  outline: none !important;
+}
+.date-field{
+  width:60px !important;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #505050;
+}
+.date-field:focus{
+  outline: none;
+}
+.cvv-field{
+  width: 40px !important;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #505050;
+}
+
+.cvv-field:focus{
+  outline: none;
+}
+.blur-effect{
+  width: 215px;
+  height: 105px;
+  backdrop-filter: blur(10px);
+}

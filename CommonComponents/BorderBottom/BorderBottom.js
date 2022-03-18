@@ -6,8 +6,8 @@ const BorderBottom  = () => {
   return (
    <Box
    width="100%"
-   borderBottom="1px solid"
-   borderColor=" #DDDDDD"
+   borderBottom="2px solid"
+   borderColor="#DDDDDD"
    />
   )
 }

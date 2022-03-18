@@ -6,6 +6,7 @@ import { Box, Flex, Text, Grid } from "atoms";
 import PaymentTitle from "CommonComponents/PaymentTitle/PaymentTitle";
 import CardDetails from "Component/CardDetails/CardDetails";
 import OrderSummarySection from "Component/OrderSummarySection/OrderSummarySection";
+import SaveCardSection from "Component/SaveCardSection/SaveCardSection";
 
 const data = [
   { id: "0", text: "Credit/Debit Card" },
@@ -72,140 +73,8 @@ const PaymentSection = () => {
               Edit
             </span>
           </Text>
-          {/* cards image */}
-          <Grid
-            gridTemplateColumns="215px 215px"
-            gridGap="23px"
-            height="108px"
-            mb="30px"
-          >
-            <Box>
-              <Box>
-                <Box
-                  backgroundImage="url(/images/card-circle-one.svg)"
-                  width="77px"
-                  height="77px"
-                  position="absolute"
-                  right={0}
-                />
-                <Box
-                  backgroundImage="url(/images/card-circle-one.svg)"
-                  width="77px"
-                  height="77px"
-                  position="absolute"
-                  left={0}
-                  bottom={0}
-                />
-                <Flex
-                  backgroundImage="url(/images/card-one.svg)"
-                  backgroundSize="cover"
-                  width="100%"
-                  height="108px"
-                  zIndex={2}
-                  filter="blue(24)"
-                  background="linear-gradient(147.46deg, rgba(255, 255, 255, 0.4) 30.82%, rgba(255, 255, 255, 0.1) 77.94%)"
-                  boxShadow="-4px -4px 11px rgba(95, 95, 95, 0.06), 4px 4px 7px rgba(62, 62, 62, 0.08)"
-                  alignItems="center"
-                >
-                  {/* <Grid
-                    gridTemplateColumns="repeat(3, auto)"
-                    justifyContent="space-between"
-                    px="14px"
-                  >
-                    <Box>
-                      <Image
-                        src="/images/empty-circle.svg"
-                        alt="empty-circle"
-                        width={18}
-                        height={18}
-                      />
-                    </Box>
-                    <Box>
-                      <Text
-                        fontFamily="Poppins"
-                        fontWeight="600"
-                        fontSize="14px"
-                        color="#5F5F5F"
-                      >
-                        xXXX 4023
-                      </Text>
-                    </Box>
-                    <Box>
-                      <Image
-                        src="/images/card-logo.svg"
-                        alt="empty-circle"
-                        width={18}
-                        height={18}
-                      />
-                    </Box>
-                  </Grid> */}
-                </Flex>
-              </Box>
-            </Box>
-            <Box>
-              <Box>
-                <Box
-                  backgroundImage="url(/images/card-circle-one.svg)"
-                  width="77px"
-                  height="77px"
-                  position="absolute"
-                  right={0}
-                />
-                <Box
-                  backgroundImage="url(/images/card-circle-one.svg)"
-                  width="77px"
-                  height="77px"
-                  position="absolute"
-                  left={0}
-                  bottom={0}
-                />
-                <Flex
-                  backgroundImage="url(/images/card-one.svg)"
-                  backgroundSize="cover"
-                  height="108px"
-                  zIndex={2}
-                  filter="blue(24)"
-                  background="linear-gradient(147.46deg, rgba(255, 255, 255, 0.4) 30.82%, rgba(255, 255, 255, 0.1) 77.94%)"
-                  boxShadow="-4px -4px 11px rgba(95, 95, 95, 0.06), 4px 4px 7px rgba(62, 62, 62, 0.08)"
-                  alignItems="center"
-                >
-                  {/* <Grid
-                    gridTemplateColumns="repeat(3, auto)"
-                    justifyContent="space-between"
-                    px="14px"
-                  >
-                    <Box>
-                      <Image
-                        src="/images/empty-circle.svg"
-                        alt="empty-circle"
-                        width={18}
-                        height={18}
-                      />
-                    </Box>
-                    <Box>
-                      <Text
-                        fontFamily="Poppins"
-                        fontWeight="600"
-                        fontSize="14px"
-                        color="#5F5F5F"
-                      >
-                        xXXX 4023
-                      </Text>
-                    </Box>
-                    <Box>
-                      <Image
-                        src="/images/card-logo.svg"
-                        alt="empty-circle"
-                        width={18}
-                        height={18}
-                      />
-                    </Box>
-                  </Grid> */}
-                </Flex>
-              </Box>
-            </Box>
-            <Grid></Grid>
-          </Grid>
+          {/* cards image section  */}
+          <SaveCardSection />
           <Box>
             <Text
               fontFamily="Poppins"
