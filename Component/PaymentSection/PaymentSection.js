@@ -18,7 +18,7 @@ const PaymentSection = () => {
   const [selected, setSelected] = useState(false);
   return (
     <>
-      <Grid gridTemplateColumns="2.3fr 1fr">
+      <Grid gridTemplateColumns={{xs:"1fr", lg:"2.3fr 1fr"}}>
         <Box pl="111px" pr="204px" pt="46px" pb="62px">
           <Flex flex flexDirection="row" mb="10px">
             <Box onClick={() => setSelected(true)}>
@@ -166,7 +166,7 @@ const PaymentSection = () => {
             </Flex>
           </Flex>
         </Box>
-        <Box>
+        <Box gridColumn={{xs:1, lg:"unset"}} gridRow={{xs:1, lg:"unset"}}>
           <OrderSummarySection />
         </Box>
       </Grid>

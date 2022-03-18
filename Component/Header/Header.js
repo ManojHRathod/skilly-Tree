@@ -100,6 +100,74 @@ const Header = () => {
                   </Flex>
                 </Box>
               </Form>
+              {/* mobile responsive */}
+              <Box
+                display={{ xs: "block", lg: "none" }}
+                background="#FFFDFD"
+                boxShadow="0px 4px 4px rgba(0, 0, 0, 0.08)"
+              >
+                <Grid
+                  gridAutoFlow="column"
+                  px="41px"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  height="44px"
+                >
+                  <Text
+                    fontFamily="Poppins"
+                    fontWeight="500"
+                    fontSize="15px"
+                    color="#1A1A1A"
+                  >
+                    9:41
+                  </Text>
+                  <Image
+                    src="/images/status-bar.svg"
+                    alt="status-bar"
+                    width={63}
+                    height={11}
+                  />
+                </Grid>
+                <Grid
+                  gridAutoFlow="column"
+                  px="26px"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  height="68px"
+                >
+                  <Image
+                    src="/images/menu-icon-mobile.svg"
+                    alt="menu-icon-mobile"
+                    width={30}
+                    height={19}
+                  />
+
+                  <Image
+                    src="/images/skilly-icon-mobile.svg"
+                    alt="skilly-icon-mobile"
+                    width={134}
+                    height={34}
+                  />
+                  <Flex
+                    alignItems="center"
+                    justifyContent="center"
+                    width="72px"
+                    height="28px"
+                    background="linear-gradient(112.33deg, #FC4D6D 23.89%, #FDA02F 94.22%)"
+                    borderRadius="61px"
+                  >
+                    <Text
+                      fontFamily="Poppins"
+                      fontWeight="500"
+                      fontSize="13px"
+                      color="#FFFFFF"
+                      textAlign="center"
+                    >
+                      Sign In
+                    </Text>
+                  </Flex>
+                </Grid>
+              </Box>
             </>
           );
         }}
