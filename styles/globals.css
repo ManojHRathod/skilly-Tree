@@ -70,8 +70,14 @@ a {
 .coupon-input:focus {
   outline: none !important;
 }
-.date-field{
-  width:60px !important;
+
+@media only screen and (max-width: 600px) {
+  .coupon-input {
+    background: #f5f5f5;
+  }
+}
+.date-field {
+  width: 60px !important;
   border: none;
   font-family: "Poppins";
   font-style: normal;
@@ -79,10 +85,10 @@ a {
   font-size: 14px;
   color: #505050;
 }
-.date-field:focus{
+.date-field:focus {
   outline: none;
 }
-.cvv-field{
+.cvv-field {
   width: 40px !important;
   border: none;
   font-family: "Poppins";
@@ -92,10 +98,10 @@ a {
   color: #505050;
 }
 
-.cvv-field:focus{
+.cvv-field:focus {
   outline: none;
 }
-.blur-effect{
+.blur-effect {
   width: 215px;
   height: 105px;
   backdrop-filter: blur(10px);

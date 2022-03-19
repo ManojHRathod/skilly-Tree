@@ -29,12 +29,15 @@ const OrderSummarySection = () => {
           return (
             <>
               <Form>
-                <Box background={{ xs: "#ffffff", lg: "#E5E5E5" }}>
+                <Box
+                  background={{ xs: "#ffffff", lg: "#E5E5E5" }}
+                  mt={{ xs: "27px", lg: "unset" }}
+                >
                   <Box
-                    paddingLeft={{ xs: "10px", lg: "30px" }}
-                    paddingRight={{ xs: "10px", lg: "54px" }}
-                    paddingTop={{ xs: "", lg: "43px" }}
-                    paddingBottom={{ xs: "", lg: "81px" }}
+                    pl={{ xs: "10px", lg: "30px" }}
+                    pr={{ xs: "10px", lg: "54px" }}
+                    pt={{ xs: "unset", lg: "43px" }}
+                    pb={{ xs: "", lg: "81px" }}
                   >
                     <Flex>
                       <Text
@@ -72,7 +75,7 @@ const OrderSummarySection = () => {
                         pt={{ xs: "18px", lg: "42px" }}
                         pb={{ xs: "20px", lg: "39px" }}
                         pl={{ xs: "17px", lg: "22px" }}
-                        pr={{xs:"29px", lg:"unset"}}
+                        pr={{ xs: "29px", lg: "unset" }}
                       >
                         <Grid gridTemplateColumns="79px 1fr" gridGap="15px">
                           <Box
@@ -151,8 +154,17 @@ const OrderSummarySection = () => {
                           </Box>
                         </Grid>
                       </Box>
-                      <BorderBottom  pl="17px" pr="29px"/>
-                      <Box pt="33px" pb="36px" pl="22px">
+                      <Box
+                        pl={{ xs: "16px", lg: "unset" }}
+                        pr={{ xs: "30px", lg: "unset" }}
+                      >
+                        <BorderBottom />
+                      </Box>
+                      <Box
+                        pt={{ xs: "19px", lg: "33px" }}
+                        pb={{ xs: "19px", lg: "36px" }}
+                        pl={{ xs: "17px", lg: "22px" }}
+                      >
                         <SubHeading
                           text="Date and Time"
                           fontSize="14px"
@@ -170,14 +182,27 @@ const OrderSummarySection = () => {
                           color="#8C8C8C"
                         />
                       </Box>
-                      <BorderBottom />
-                      <Flex py="15px" pl="22px">
+                      <Box
+                        pl={{ xs: "16px", lg: "unset" }}
+                        pr={{ xs: "30px", lg: "unset" }}
+                      >
+                        <BorderBottom />
+                      </Box>
+                      <Flex
+                        py={{ xs: "15px", lg: "15px" }}
+                        pl={{ xs: "38px", lg: "22px" }}
+                        pr={{ xs: "49px", lg: "unset" }}
+                      >
                         <SubHeading
                           text="Apply Coupon"
                           fontSize="13px"
                           color="#6B6B6B"
                         />
-                        <Box ml="auto" borderRadius="6px">
+                        <Box
+                          ml="auto"
+                          borderRadius="6px"
+                          background={{ xs: "#F5F5F5", lg: "#ffffff" }}
+                        >
                           <Field
                             type="text"
                             id="coupon"
@@ -186,8 +211,17 @@ const OrderSummarySection = () => {
                           />
                         </Box>
                       </Flex>
-                      <BorderBottom />
-                      <Box py="39px" pl="22px">
+                      <Box
+                        pl={{ xs: "16px", lg: "unset" }}
+                        pr={{ xs: "30px", lg: "unset" }}
+                      >
+                        <BorderBottom />
+                      </Box>
+                      <Box
+                        py={{ xs: "39px", lg: "39px" }}
+                        pl={{ xs: "38px", lg: "22px" }}
+                        pr={{ xs: "42px", lg: "unset" }}
+                      >
                         <Flex mb="10px">
                           <Box>
                             <SubHeading
@@ -260,8 +294,18 @@ const OrderSummarySection = () => {
                           </Box>
                         </Flex>
                       </Box>
-                      <BorderBottom />
-                      <Box pt="11px" pl="22px" mb="48px">
+                      <Box
+                        pl={{ xs: "16px", lg: "unset" }}
+                        pr={{ xs: "30px", lg: "unset" }}
+                      >
+                        <BorderBottom />
+                      </Box>
+                      <Box
+                        pt={{ xs: "12px", lg: "11px" }}
+                        pl={{ xs: "38px", lg: "22px" }}
+                        pr={{ xs: "36px", lg: "unset" }}
+                        mb={{ xs: "31px", lg: "48px" }}
+                      >
                         <Flex>
                           <Box>
                             <SubHeading
@@ -281,7 +325,11 @@ const OrderSummarySection = () => {
                         </Flex>
                       </Box>
 
-                      <Flex pl="22px">
+                      <Flex
+                        pl={{ xs: "29px", lg: "22px" }}
+                        pr={{ xs: "29px", lg: "unset" }}
+                        pb={{ xs: "32px", lg: "unset" }}
+                      >
                         <Box mr="17px" alignItems="start" mt="-4px">
                           <Image
                             src="/images/complete-icon.svg"

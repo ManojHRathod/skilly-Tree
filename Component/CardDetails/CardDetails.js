@@ -7,6 +7,11 @@ import InputLabel from "CommonComponents/InputLabel/InputLabel";
 
 const CardDetails = () => {
   const [selected, setSelected] = useState(0);
+
+  const handleSelect = (index) => {
+    setSelected(index);
+  };
+
   return (
     <>
       <Formik
@@ -16,7 +21,11 @@ const CardDetails = () => {
           return (
             <>
               <Form>
-                <Grid gridTemplateColumns="1fr 1fr" gridGap="42px" mb="25px">
+                <Grid
+                  gridTemplateColumns={{ xs: "1fr", lg: "1fr 1fr" }}
+                  gridGap={{ xs: "23px", lg: "42px" }}
+                  mb={{ xs: "", lg: "25px" }}
+                >
                   <Box>
                     <InputLabel text="Card Number" />
                     <Flex>
@@ -25,9 +34,9 @@ const CardDetails = () => {
                         id="cardNumber"
                         name="cardNumber"
                         placeholder="xxxx xxxx xxxx xxxx"
-                        maxlength="16"
+                        maxlength="19"
                         className="inputField"
-                        onClick={() => setSelected(true)}
+                        onClick={() => handleSelect(1)}
                       />
                       <Box ml="auto">
                         <Image
@@ -41,9 +50,7 @@ const CardDetails = () => {
                     <Box
                       borderBottom="2px solid"
                       borderColor={
-                        selected === !false
-                          ? "rgba(83, 109, 238, 1)"
-                          : "#6A6A6A"
+                        selected === 1 ? "rgba(83, 109, 238, 1)" : "#6A6A6A"
                       }
                       width="100%"
                       mt="6px"
@@ -58,14 +65,12 @@ const CardDetails = () => {
                       name="cardName"
                       placeholder="ENTER YOUR NAME"
                       className="inputField"
-                      onClick={() => setSelected(true)}
+                      onClick={() => handleSelect(2)}
                     />
                     <Box
                       borderBottom="2px solid"
                       borderColor={
-                        selected === !false
-                          ? "rgba(83, 109, 238, 1)"
-                          : "#6A6A6A"
+                        selected === 2 ? "rgba(83, 109, 238, 1)" : "#6A6A6A"
                       }
                       width="100%"
                       mt="6px"
@@ -82,14 +87,12 @@ const CardDetails = () => {
                           name="date"
                           placeholder="MM/YY"
                           className="date-field"
-                          onClick={() => setSelected(true)}
+                          onClick={() => handleSelect(3)}
                         />
                         <Box
                           borderBottom="2px solid"
                           borderColor={
-                            selected === !false
-                              ? "rgba(83, 109, 238, 1)"
-                              : "#6A6A6A"
+                            selected === 3 ? "rgba(83, 109, 238, 1)" : "#6A6A6A"
                           }
                           width="100%"
                           mt="6px"
@@ -104,7 +107,7 @@ const CardDetails = () => {
                             name="cvv"
                             placeholder="---"
                             className="cvv-field"
-                            onClick={() => setSelected(true)}
+                            onClick={() => handleSelect(4)}
                           />
                           <Box ml="auto">
                             <Image
@@ -118,9 +121,7 @@ const CardDetails = () => {
                         <Box
                           borderBottom="2px solid"
                           borderColor={
-                            selected === !false
-                              ? "rgba(83, 109, 238, 1)"
-                              : "#6A6A6A"
+                            selected === 4 ? "rgba(83, 109, 238, 1)" : "#6A6A6A"
                           }
                           width="100%"
                           mt="6px"

@@ -1,18 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import { Box} from "atoms";
+import { Box } from "atoms";
 
-const BorderBottom  = ({display, pl, pr}) => {
+const BorderBottom = ({ display }) => {
   return (
-   <Box
-   display={display}
-   width="100%"
-   borderBottom="2px solid"
-   borderColor="#DDDDDD"
-   pl={{xs:{pl}, lg:"unset"}}
-   pr={{xs:{pr}, lg:"unset"}}
-   />
-  )
-}
+    <Box
+      display={display}
+      width="100%"
+      borderBottom="2px solid"
+      borderColor="#DDDDDD"
+    />
+  );
+};
 
-export default BorderBottom
+export default BorderBottom;

@@ -105,6 +105,7 @@ const Header = () => {
                 display={{ xs: "block", lg: "none" }}
                 background="#FFFDFD"
                 boxShadow="0px 4px 4px rgba(0, 0, 0, 0.08)"
+                width="100%"
               >
                 <Grid
                   gridAutoFlow="column"
