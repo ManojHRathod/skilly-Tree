@@ -57,6 +57,7 @@ const OrderSummarySection = () => {
                             fontWeight: "500",
                             color: "#4863ED",
                             marginLeft: "11px",
+                            cursor:"pointer"
                           }}
                         >
                           Edit

@@ -138,6 +138,7 @@ const PaymentSection = () => {
                   fontFamily: "Poppins",
                   fontWeight: "500",
                   color: "#4863ED",
+                  cursor:"pointer"
                 }}
               >
                 Edit
