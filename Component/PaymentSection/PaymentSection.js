@@ -48,6 +48,7 @@ const PaymentSection = () => {
                     fontWeight="600"
                     fontSize="14px"
                     color={selected === 1 ? "#FC4D6D" : "#848484"}
+                    cursor="pointer"
                   >
                     Personal Details
                   </Text>
@@ -79,8 +80,9 @@ const PaymentSection = () => {
                     fontWeight="600"
                     fontSize="14px"
                     color={selected === 2 ? "#FC4D6D" : "#848484"}
+                    cursor="pointer"
                   >
-                  Payment Section
+                    Payment Section
                   </Text>
                 </Box>
                 {selected === 2 && (
@@ -179,6 +181,7 @@ const PaymentSection = () => {
                         borderColor={card === item.id ? "#FC4D6D" : "#BCBCBC"}
                         borderRadius="13px"
                         onClick={() => setCard(item.id)}
+                        cursor="pointer"
                       >
                         <Text
                           fontFamily="Poppins"
@@ -237,6 +240,7 @@ const PaymentSection = () => {
                 borderRadius="61px"
                 alignItems="center"
                 justifyContent="center"
+                cursor="pointer"
               >
                 <Text
                   fontFamily="Poppins"

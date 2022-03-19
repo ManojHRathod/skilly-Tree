@@ -49,7 +49,7 @@ const Header = () => {
                           placeholder="SEARCH A SKILL"
                           className="search-input"
                         />
-                        <Flex alignItems="center">
+                        <Flex alignItems="center" cursor="pointer">
                           <Image
                             src="/images/search-icon.svg"
                             alt="search-icon"
@@ -86,6 +86,7 @@ const Header = () => {
                       height="56px"
                       background="linear-gradient(112.33deg, #FC4D6D 23.89%, #FDA02F 94.22%)"
                       borderRadius="61px"
+                      cursor="pointer"
                     >
                       <Text
                         fontFamily="Poppins"
@@ -156,6 +157,7 @@ const Header = () => {
                     height="28px"
                     background="linear-gradient(112.33deg, #FC4D6D 23.89%, #FDA02F 94.22%)"
                     borderRadius="61px"
+                    cursor="pointer"
                   >
                     <Text
                       fontFamily="Poppins"

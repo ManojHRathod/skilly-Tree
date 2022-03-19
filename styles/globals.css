@@ -85,6 +85,9 @@ a {
   font-size: 14px;
   color: #505050;
 }
+.date-field::placeholder{
+  color: #cbcbcb;
+}
 .date-field:focus {
   outline: none;
 }
@@ -97,7 +100,9 @@ a {
   font-size: 14px;
   color: #505050;
 }
-
+.cvv-field::placeholder{
+  color: #cbcbcb;
+}
 .cvv-field:focus {
   outline: none;
 }
