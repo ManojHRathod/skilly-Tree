@@ -6,21 +6,6 @@ import { Box, Flex, Text, Grid } from "atoms";
 import BorderBottom from "CommonComponents/BorderBottom/BorderBottom";
 import SubHeading from "CommonComponents/SubHeading/SubHeading";
 
-const data = [
-  {
-    title: "1 hour lesson",
-    content: "₹3,000.80",
-  },
-  {
-    title: "Transaction fee",
-    content: "₹22.51",
-  },
-  {
-    title: "Lesson cancellation",
-    content: "Free",
-  },
-];
-
 const OrderSummarySection = () => {
   return (
     <>
@@ -57,7 +42,7 @@ const OrderSummarySection = () => {
                             fontWeight: "500",
                             color: "#4863ED",
                             marginLeft: "11px",
-                            cursor:"pointer"
+                            cursor: "pointer",
                           }}
                         >
                           Edit
